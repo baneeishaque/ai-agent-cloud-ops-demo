@@ -1,0 +1,46 @@
+{
+  "intro": {
+    "title": "Feche o portátil. O agente continua trabalhando.",
+    "narration": "Todo agente de IA tem uma dependência escondida: a máquina onde ele roda. Este agente roda numa instância de nuvem, é controlado pelo WhatsApp e trabalha no turno da noite enquanto você dorme."
+  },
+  "problem": {
+    "title": "O portátil entreaberto é o problema",
+    "narration": "Fechar a tampa do portátil pode fazê-lo dormir, cortar a rede e parar o trabalho em andamento. Desenvolvedores andam por aeroportos com o portátil entreaberto para manter o agente vivo. É um paliativo, não um projeto."
+  },
+  "timing": {
+    "title": "O verdadeiro problema é a noite",
+    "narration": "Para uma equipe no horário de Pequim (UTC+8), as horas de compra mais movimentadas da Europa e das Américas caem à noite. É justamente quando os preços dos concorrentes mudam e o estoque acaba — é justamente quando o portátil adormecido falha."
+  },
+  "architecture": {
+    "title": "Três camadas, uma instância",
+    "narration": "O sistema tem três camadas. O WhatsApp é a camada de controle: num único chat você envia trabalho e lê alertas. A instância de nuvem é a camada de computação: roda independente do seu portátil. Os arquivos no disco são a camada de evidência: cada execução deixa um registro que você pode conferir."
+  },
+  "hosting": {
+    "title": "Onde o agente deveria morar?",
+    "narration": "O portátil dorme. Um servidor caseiro exige energia, rede e DNS dinâmico. Uma instância de nuvem roda vinte e quatro horas, tem endereço público para apps de chat e é restaurada de um snapshot. O artigo compara as três em quatro fatores."
+  },
+  "deploy": {
+    "title": "Passo um: implantar e conectar",
+    "narration": "Crie uma instância Linux a partir do template de aplicação OpenClaw: dois vCPU, dois gigabytes de memória, quarenta gigabytes de disco. Escolha uma região fora da China continental para o WhatsApp, conecte sua chave de API do modelo e escaneie o QR code para vincular o WhatsApp. Envie hi e espere a resposta."
+  },
+  "prompt": {
+    "title": "Passo dois: o prompt é o programa",
+    "narration": "O trabalho é definido por uma única mensagem. O escopo é fixo: produtos configurados e o armazém da costa leste. Os eventos são fixos: queda de preço, ou estoque abaixo de cinquenta unidades. Os alertas são deduplicados, e o resumo chega às oito da manhã, horário de Pequim, mesmo sem nenhum problema."
+  },
+  "guardrails": {
+    "title": "Apenas observar e recomendar",
+    "narration": "O prompt termina com um limite de autoridade: apenas observar e recomendar. Não altere preços, não faça pedidos, não contate clientes. Lembre-se: isto é política, não sandbox. O controle real são credenciais somente leitura e um humano em cada decisão."
+  },
+  "report": {
+    "title": "Passo três: o relatório da manhã",
+    "narration": "Às oito da manhã o resumo está no seu tópico do WhatsApp. Depois verifique: abra o log salvo na instância, revise o histórico de execução e rastreie um alerta do começo ao fim. O chat é o aviso; o arquivo é a prova."
+  },
+  "tradeoffs": {
+    "title": "Trade-offs, com honestidade",
+    "narration": "Toda escolha tem um preço. A instância é uma assinatura. Apps de chat não são fila de trabalho. O agente resume a própria noite, então dados ruins também podem parecer confiáveis. E agora você opera uma caixa aberta na internet. A documentação registra cada trade-off, não esconde."
+  },
+  "outro": {
+    "title": "Roube o padrão",
+    "narration": "Este padrão serve para qualquer caixa sempre ligada: um app de chat como camada de controle, uma instância de nuvem como camada de computação, arquivos como camada de evidência. O código, o livro de receitas de prompts e o pipeline deste vídeo são públicos e licenciados sob MIT. Link na descrição."
+  }
+}

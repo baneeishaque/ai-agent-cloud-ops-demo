@@ -1,0 +1,46 @@
+{
+  "intro": {
+    "title": "Chiudi il portatile. L'agente continua a lavorare.",
+    "narration": "Ogni agente AI ha una dipendenza nascosta: la macchina su cui gira. Questo agente gira su un'istanza cloud, si controlla via WhatsApp e lavora nel turno di notte mentre dormi."
+  },
+  "problem": {
+    "title": "Il portatile socchiuso è il problema",
+    "narration": "Chiudere il coperchio del portatile può farlo dormire, spezzare la rete e fermare il lavoro in corso. Gli sviluppatori girano per gli aeroporti con il portatile socchiuso per tenere vivo il proprio agente. È un rattoppo, non un progetto."
+  },
+  "timing": {
+    "title": "Il vero tema è la notte",
+    "narration": "Per un team sull'ora di Pechino (UTC+8), le ore di acquisto più intense di Europa e America cadono di notte. Proprio allora cambiano i prezzi dei concorrenti e finiscono le scorte — proprio allora il portatile addormentato fallisce."
+  },
+  "architecture": {
+    "title": "Tre livelli, un'istanza",
+    "narration": "Il sistema ha tre livelli. WhatsApp è il livello di controllo: in una sola chat invii il lavoro e leggi gli avvisi. L'istanza cloud è il livello di calcolo: gira indipendente dal tuo portatile. I file sul disco sono il livello di prova: ogni esecuzione lascia un registro che puoi controllare."
+  },
+  "hosting": {
+    "title": "Dove dovrebbe vivere l'agente?",
+    "narration": "Il portatile dorme. Un server di casa richiede elettricità, rete e DNS dinamico. Un'istanza cloud gira ventiquattro ore su ventiquattro, ha un indirizzo pubblico per le app di chat e si ripristina da uno snapshot. L'articolo confronta tutte e tre su quattro fattori."
+  },
+  "deploy": {
+    "title": "Passo uno: distribuire e collegare",
+    "narration": "Crea un'istanza Linux dal template applicativo OpenClaw: due vCPU, due gigabyte di memoria, quaranta gigabyte di disco. Scegli una regione fuori dalla Cina continentale per WhatsApp, collega la chiave API del modello, poi scansiona il codice QR per collegare WhatsApp. Invia hi e attendi la risposta."
+  },
+  "prompt": {
+    "title": "Passo due: il prompt è il programma",
+    "narration": "Il lavoro è definito da un solo messaggio. L'ambito è fisso: prodotti configurati e magazzino della costa est. Gli eventi sono fissi: prezzo in calo, oppure scorte sotto le cinquanta unità. Gli avvisi sono deduplicati, e il riepilogo arriva alle otto del mattino, ora di Pechino, anche senza alcun problema."
+  },
+  "guardrails": {
+    "title": "Solo osservare e consigliare",
+    "narration": "Il prompt finisce con un limite di autorità: solo osservare e consigliare. Non cambiare i prezzi, non emettere ordini, non contattare i clienti. Ricorda: è una policy, non una sandbox. Il controllo vero sono credenziali di sola lettura e un umano in ogni decisione."
+  },
+  "report": {
+    "title": "Passo tre: il report del mattino",
+    "narration": "Alle otto del mattino il riepilogo è nel tuo thread WhatsApp. Poi verifica: apri il registro salvato sull'istanza, controlla la cronologia di esecuzione e traccia un avviso dall'inizio alla fine. La chat è l'avviso; il file è la prova."
+  },
+  "tradeoffs": {
+    "title": "Compromessi, con onestà",
+    "narration": "Ogni scelta ha un prezzo. L'istanza è un abbonamento. Le app di chat non sono una coda di lavoro. L'agente riassume da solo la propria notte, quindi anche dati scadenti possono sembrare affidabili. E ora gestisci una scatola aperta su internet. La documentazione registra ogni compromesso, non lo nasconde."
+  },
+  "outro": {
+    "title": "Ruba il modello",
+    "narration": "Questo modello vale per qualsiasi scatola sempre accesa: un'app di chat come livello di controllo, un'istanza cloud come livello di calcolo, file come livello di prova. Il codice, il ricettario dei prompt e la pipeline di questo video sono pubblici e con licenza MIT. Link in descrizione."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "intro": {
+    "title": "Dizüstü bilgisayarı kapat. Ajan çalışmaya devam etsin.",
+    "narration": "Her yapay zeka ajanının gizli bir bağımlılığı vardır: üzerinde çalıştığı makine. Bu ajan bir bulut örneğinde çalışır, WhatsApp üzerinden kontrol edilir ve siz uyurken gece vardiyasında çalışır."
+  },
+  "problem": {
+    "title": "Sorun yarı açık dizüstü",
+    "narration": "Dizüstünün kapağını kapatmak onu uyutabilir, ağı koparabilir ve süren işi durdurabilir. Geliştiriciler ajanlarını hayatta tutmak için havaalanlarında yarı açık dizüstüyle dolaşıyor. Bu bir geçici çözüm, tasarım değil."
+  },
+  "timing": {
+    "title": "Asıl mesele gece saatleri",
+    "narration": "Pekin saatine (UTC+8) göre çalışan bir ekip için Avrupa ve Amerika'nın en yoğun alışveriş saatleri geceye düşer. İşte o zaman rakiplerin fiyatları değişir ve stok tükenir — işte o zaman uyuyan dizüstü başarısız olur."
+  },
+  "architecture": {
+    "title": "Üç katman, tek örnek",
+    "narration": "Sistemin üç katmanı var. WhatsApp kontrol katmanıdır: tek bir sohbette işi gönderir ve uyarıları okursunuz. Bulut örneği hesaplama katmanıdır: dizüstünüzden bağımsız çalışır. Disk üzerindeki dosyalar kanıt katmanıdır: her çalıştırma denetleyebileceğiniz bir günlük bırakır."
+  },
+  "hosting": {
+    "title": "Ajan nerede yaşamalı?",
+    "narration": "Dizüstü uyur. Ev sunucusu elektrik, ağ ve dinamik DNS ister. Bulut örneği yirmi dört saat çalışır, sohbet uygulamaları için genel bir adresi vardır ve anlık görüntüden geri yüklenir. Makale üçünü dört faktörde karşılaştırıyor."
+  },
+  "deploy": {
+    "title": "Birinci adım: kur ve bağlan",
+    "narration": "OpenClaw uygulama şablonundan bir Linux örneği oluşturun: iki vCPU, iki gigabayt bellek, kırk gigabayt disk. WhatsApp için anakara Çin dışında bir bölge seçin, model API anahtarınızı bağlayın, ardından QR kodu tarayarak WhatsApp'ı bağlayın. hi gönderin ve yanıtı bekleyin."
+  },
+  "prompt": {
+    "title": "İkinci adım: prompt programın kendisidir",
+    "narration": "İş tek bir mesajla tanımlanır. Kapsam sabit: yapılandırılmış ürünler ve doğu yakası deposu. Olaylar sabit: fiyat düşer ya da stok elli birimin altına iner. Uyarılar tekilleştirilir ve özet Pekin saatiyle sabah sekizde gelir, hiç sorun olmasa bile."
+  },
+  "guardrails": {
+    "title": "Yalnızca izle ve öner",
+    "narration": "Prompt bir yetki sınırıyla biter: yalnızca izle ve öner. Fiyatları değiştirme, satın alma emri verme, müşterilerle iletişime geçme. Unutmayın: bu bir politika, korumalı alan değil. Gerçek kontrol salt okunur kimlik bilgileri ve her kararda bir insandır."
+  },
+  "report": {
+    "title": "Üçüncü adım: sabah raporu",
+    "narration": "Sabah sekizde özet WhatsApp dizinizde olur. Sonra doğrulayın: örnekteki kayıtlı günlüğü açın, yürütme geçmişine bakın ve bir uyarıyı baştan sona izleyin. Sohbet bildirimdir; dosya kanıttır."
+  },
+  "tradeoffs": {
+    "title": "Ödünleşimler, dürüstçe",
+    "narration": "Her seçimin bir bedeli vardır. Örnek bir aboneliktir. Sohbet uygulamaları iş kuyruğu değildir. Ajan kendi gecesini kendisi özetler, bu yüzden kötü veri de güvenilir görünebilir. Ve artık internette açık bir kutu işletiyorsunuz. Belgeler her ödünleşimi kaydeder, saklamaz."
+  },
+  "outro": {
+    "title": "Kalıbı çal",
+    "narration": "Bu kalıp her zaman açık her kutuya uyar: kontrol katmanı olarak bir sohbet uygulaması, hesaplama katmanı olarak bir bulut örneği, kanıt katmanı olarak dosyalar. Kod, prompt yemek kitabı ve bu videonun iş akışı açık ve MIT lisanslı. Bağlantı açıklamada."
+  }
+}

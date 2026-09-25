@@ -1,0 +1,46 @@
+{
+  "intro": {
+    "title": "Tutup laptop. Agen tetap bekerja.",
+    "narration": "Setiap agen AI punya ketergantungan tersembunyi: mesin tempat ia berjalan. Agen ini berjalan di instans cloud, dikendalikan lewat WhatsApp, dan bekerja di shift malam saat Anda tidur."
+  },
+  "problem": {
+    "title": "Laptop setengah terbuka itu masalahnya",
+    "narration": "Menutup laptop bisa membuatnya tidur, memutus jaringan, dan menghentikan pekerjaan yang sedang berjalan. Para developer berkeliling bandara dengan laptop setengah terbuka agar agen mereka tetap hidup. Ini tambalan sementara, bukan desain."
+  },
+  "timing": {
+    "title": "Inti persoalannya adalah malam",
+    "narration": "Bagi tim yang bekerja pada waktu Beijing (UTC+8), jam belanja tersibuk di Eropa dan Amerika jatuh pada malam hari. Saat itulah harga pesaing berubah dan stok habis — saat itulah laptop yang tertidur gagal."
+  },
+  "architecture": {
+    "title": "Tiga lapisan, satu instans",
+    "narration": "Sistem ini punya tiga lapisan. WhatsApp adalah lapisan kendali: dalam satu obrolan Anda mengirim pekerjaan dan membaca peringatan. Instans cloud adalah lapisan komputasi: ia berjalan mandiri dari laptop Anda. File di disk adalah lapisan bukti: setiap proses meninggalkan log yang bisa Anda periksa."
+  },
+  "hosting": {
+    "title": "Di mana agen sebaiknya tinggal?",
+    "narration": "Laptop tertidur. Server rumah butuh listrik, jaringan, dan DNS dinamis. Instans cloud berjalan dua puluh empat jam, punya alamat publik untuk aplikasi obrolan, dan bisa dipulihkan dari snapshot. Artikel membandingkan ketiganya pada empat faktor."
+  },
+  "deploy": {
+    "title": "Langkah satu: pasang dan sambungkan",
+    "narration": "Buat instans Linux dari template aplikasi OpenClaw: dua vCPU, dua gigabita memori, empat puluh gigabita disk. Pilih wilayah di luar Tiongkok daratan untuk WhatsApp, sambungkan kunci API model Anda, lalu pindai kode QR untuk menautkan WhatsApp. Kirim hi dan tunggu balasannya."
+  },
+  "prompt": {
+    "title": "Langkah dua: prompt adalah programnya",
+    "narration": "Pekerjaan ditentukan oleh satu pesan. Cakupannya tetap: produk yang dikonfigurasi dan gudang pesisir timur. Peristiwanya tetap: harga turun, atau stok di bawah lima puluh unit. Peringatan dideduplikasi, dan ringkasan tiba pukul delapan pagi waktu Beijing, meski tidak ada masalah sama sekali."
+  },
+  "guardrails": {
+    "title": "Hanya memantau dan menyarankan",
+    "narration": "Prompt berakhir dengan batas kewenangan: hanya memantau dan menyarankan. Jangan ubah harga, jangan buat pesanan pembelian, jangan hubungi pelanggan. Ingat: ini kebijakan, bukan sandbox. Kendali sebenarnya adalah kredensial hanya-baca dan manusia di setiap keputusan."
+  },
+  "report": {
+    "title": "Langkah tiga: laporan pagi",
+    "narration": "Pukul delapan pagi ringkasan ada di utas WhatsApp Anda. Lalu periksa: buka log tersimpan di instans, tinjau catatan eksekusi, dan telusuri satu peringatan dari awal sampai akhir. Obrolan adalah pemberitahuan; file adalah bukti."
+  },
+  "tradeoffs": {
+    "title": "Kompromi, dengan jujur",
+    "narration": "Setiap pilihan punya harga. Instans adalah langganan. Aplikasi obrolan bukan antrean kerja. Agen meringkas malamnya sendiri, jadi data buruk pun bisa tampak meyakinkan. Dan kini Anda menjalankan kotak terbuka di internet. Dokumentasinya mencatat setiap kompromi, bukan menyembunyikannya."
+  },
+  "outro": {
+    "title": "Curi polanya",
+    "narration": "Pola ini berlaku untuk kotak apa pun yang selalu menyala: aplikasi obrolan sebagai lapisan kendali, instans cloud sebagai lapisan komputasi, file sebagai lapisan bukti. Kode, buku resep prompt, dan pipeline video ini bersifat publik dan berlisensi MIT. Tautan di deskripsi."
+  }
+}

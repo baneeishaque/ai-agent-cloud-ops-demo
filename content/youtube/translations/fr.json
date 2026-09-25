@@ -1,0 +1,46 @@
+{
+  "intro": {
+    "title": "Fermez le portable. L'agent continue de travailler.",
+    "narration": "Chaque agent d'IA a une dépendance cachée : la machine sur laquelle il tourne. Cet agent tourne sur une instance cloud, se pilote via WhatsApp et travaille de nuit pendant que vous dormez."
+  },
+  "problem": {
+    "title": "Le portable entrouvert, voilà le problème",
+    "narration": "Fermer le capot du portable peut l'endormir, couper le réseau et arrêter le travail en cours. Des développeurs traversent les aéroports avec un portable entrouvert pour garder leur agent en vie. C'est un bricolage, pas une conception."
+  },
+  "timing": {
+    "title": "Le vrai sujet, c'est la nuit",
+    "narration": "Pour une équipe à l'heure de Pékin (UTC+8), les heures d'achat les plus chargées en Europe et en Amérique tombent la nuit. C'est là que les prix des concurrents changent et que le stock s'épuise — c'est là que le portable endormi échoue."
+  },
+  "architecture": {
+    "title": "Trois couches, une instance",
+    "narration": "Le système a trois couches. WhatsApp est la couche de contrôle : dans une seule conversation, vous envoyez le travail et lisez les alertes. L'instance cloud est la couche de calcul : elle tourne indépendamment de votre portable. Les fichiers sur le disque sont la couche de preuve : chaque exécution laisse un journal que vous pouvez vérifier."
+  },
+  "hosting": {
+    "title": "Où l'agent doit-il vivre ?",
+    "narration": "Le portable dort. Un serveur maison exige électricité, réseau et DNS dynamique. Une instance cloud tourne vingt-quatre heures sur vingt-quatre, a une adresse publique pour les applis de messagerie et se restaure depuis un instantané. L'article compare les trois sur quatre critères."
+  },
+  "deploy": {
+    "title": "Étape une : déployer et connecter",
+    "narration": "Créez une instance Linux depuis le modèle d'application OpenClaw : deux vCPU, deux gigaoctets de mémoire, quarante gigaoctets de disque. Choisissez une région hors de Chine continentale pour WhatsApp, connectez votre clé API de modèle, puis scannez le QR code pour lier WhatsApp. Envoyez hi et attendez la réponse."
+  },
+  "prompt": {
+    "title": "Étape deux : le prompt est le programme",
+    "narration": "Le travail tient dans un seul message. Le périmètre est fixe : produits configurés et entrepôt de la côte est. Les événements sont fixes : baisse de prix, ou stock sous cinquante unités. Les alertes sont dédupliquées, et le résumé arrive à huit heures du matin, heure de Pékin, même sans aucun problème."
+  },
+  "guardrails": {
+    "title": "Observer et recommander, rien de plus",
+    "narration": "Le prompt se termine par une limite d'autorité : observer et recommander uniquement. Ne modifiez pas les prix, ne passez pas de commandes, ne contactez pas les clients. Rappelez-vous : c'est une politique, pas un bac à sable. Le vrai contrôle, ce sont des identifiants en lecture seule et un humain à chaque décision."
+  },
+  "report": {
+    "title": "Étape trois : le rapport du matin",
+    "narration": "À huit heures, le résumé est dans votre fil WhatsApp. Vérifiez ensuite : ouvrez le journal enregistré sur l'instance, consultez l'historique d'exécution et suivez une alerte du début à la fin. Le chat est la notification ; le fichier est la preuve."
+  },
+  "tradeoffs": {
+    "title": "Les compromis, honnêtement",
+    "narration": "Chaque choix a un prix. L'instance est un abonnement. Les applis de messagerie ne sont pas une file de travail. L'agent résume lui-même sa nuit, donc de mauvaises données peuvent paraître fiables. Et vous exploitez désormais une boîte ouverte sur Internet. La documentation consigne chaque compromis au lieu de le cacher."
+  },
+  "outro": {
+    "title": "Volez le modèle",
+    "narration": "Ce modèle s'applique à toute boîte toujours allumée : une appli de messagerie comme couche de contrôle, une instance cloud comme couche de calcul, des fichiers comme couche de preuve. Le code, le recueil de prompts et le pipeline de cette vidéo sont publics et sous licence MIT. Lien en description."
+  }
+}

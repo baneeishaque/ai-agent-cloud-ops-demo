@@ -1,0 +1,46 @@
+{
+  "intro": {
+    "title": "Close your laptop. Keep the agent working.",
+    "narration": "Every AI agent has a hidden dependency: the machine it runs on. This one runs on a cloud instance, driven from WhatsApp, and it works the night shift while you sleep."
+  },
+  "problem": {
+    "title": "The half-open laptop problem",
+    "narration": "Closing a laptop lid can put it to sleep, drop the network, and pause whatever was running. Developers are literally carrying half-open laptops through airports to keep their agents alive. That is a workaround, not a design."
+  },
+  "timing": {
+    "title": "The overnight window is the point",
+    "narration": "For a team on Beijing time, peak shopping hours in Europe and the United States happen overnight. That is when competitor prices move and stock runs out, exactly when a sleeping laptop fails."
+  },
+  "architecture": {
+    "title": "Three planes, one instance",
+    "narration": "The system has three planes. WhatsApp is the control plane: you send tasks and read alerts in one chat. A cloud instance is the compute plane: it runs independently of your laptop. Files on disk are the evidence plane: every run leaves a log you can audit."
+  },
+  "hosting": {
+    "title": "Where should the agent live?",
+    "narration": "A laptop sleeps. A home server needs power, a network, and dynamic DNS. A cloud instance runs twenty-four seven, has a public address for chat apps, and can be restored from a snapshot. The article compares all three across four factors."
+  },
+  "deploy": {
+    "title": "Step one: deploy and connect",
+    "narration": "Create a Linux instance from the OpenClaw application template: two vCPUs, two gigabytes of memory, forty gigabytes of disk. Choose a region outside the mainland for WhatsApp, connect your model API key, then link WhatsApp by scanning a QR code. Send hi, and wait for the reply."
+  },
+  "prompt": {
+    "title": "Step two: the prompt is the program",
+    "narration": "The job is defined by one message. Scope is fixed: the configured products and the East Coast warehouse. Events are defined: a price drop, or stock below fifty units. Alerts are deduplicated, and the summary arrives at eight a m Beijing time, even if there is nothing to report."
+  },
+  "guardrails": {
+    "title": "Monitor and recommend only",
+    "narration": "The prompt ends with an authority boundary: monitor and recommend only. Do not change prices, place purchase orders, or contact customers. Remember what that is: policy, not a sandbox. The real control is read-only credentials and a human making every decision."
+  },
+  "report": {
+    "title": "Step three: the morning report",
+    "narration": "At eight a m, the summary is in your WhatsApp thread. Then verify it: open the saved log on the instance, check the execution records, and trace one alert end to end. The chat is the notification; the file is the record."
+  },
+  "tradeoffs": {
+    "title": "The trade-offs, honestly",
+    "narration": "Every choice costs something. The instance is a subscription. Chat apps are not job queues. The agent summarizes its own night, so bad data can look confident. And you now run an internet-facing box. The docs record each trade-off instead of hiding it."
+  },
+  "outro": {
+    "title": "Steal the pattern",
+    "narration": "The pattern ports to any always-on box: a chat app as the control plane, a cloud instance as the compute plane, files as the evidence plane. The code, the prompt cookbook, and this video's pipeline are public and MIT licensed. Link in the description."
+  }
+}
