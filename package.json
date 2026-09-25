@@ -1,0 +1,22 @@
+{
+  "name": "ai-agent-cloud-ops-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Always-on AI agent ops pattern: OpenClaw on Tencent Cloud Lighthouse, driven from WhatsApp, with overnight price and inventory monitoring — plus the full multilingual content kit.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "slides": "node content/youtube/render-slides.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "markdownlint": "markdownlint-cli2 \"**/*.md\"",
+    "markdownlint:fix": "markdownlint-cli2 --fix \"**/*.md\""
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "markdownlint-cli2": "0.23.3",
+    "prettier": "3.9.9"
+  }
+}
