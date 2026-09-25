@@ -1,0 +1,43 @@
+1
+00:00:00,400 --> 00:00:09,500
+Every AI agent has a hidden dependency: the machine it runs on. This one runs on a cloud instance, driven from WhatsApp, and it works the night shift while you sleep.
+
+2
+00:00:11,300 --> 00:00:31,214
+Closing a laptop lid can put it to sleep, drop the network, and pause whatever was running. Developers are literally carrying half-open laptops through airports to keep their agents alive. That is a workaround, not a design.
+
+3
+00:00:33,014 --> 00:00:42,281
+For a team on Beijing time, peak shopping hours in Europe and the United States happen overnight. That is when competitor prices move and stock runs out, exactly when a sleeping laptop fails.
+
+4
+00:00:44,081 --> 00:00:56,061
+The system has three planes. WhatsApp is the control plane: you send tasks and read alerts in one chat. A cloud instance is the compute plane: it runs independently of your laptop. Files on disk are the evidence plane: every run leaves a log you can audit.
+
+5
+00:00:57,861 --> 00:01:09,818
+A laptop sleeps. A home server needs power, a network, and dynamic DNS. A cloud instance runs twenty-four seven, has a public address for chat apps, and can be restored from a snapshot. The article compares all three across four factors.
+
+6
+00:01:11,618 --> 00:01:36,254
+Create a Linux instance from the OpenClaw application template: two vCPUs, two gigabytes of memory, forty gigabytes of disk. Choose a region outside the mainland for WhatsApp, connect your model API key, then link WhatsApp by scanning a QR code. Send hi, and wait for the reply.
+
+7
+00:01:38,054 --> 00:01:52,989
+The job is defined by one message. Scope is fixed: the configured products and the East Coast warehouse. Events are defined: a price drop, or stock below fifty units. Alerts are deduplicated, and the summary arrives at eight a m Beijing time, even if there is nothing to report.
+
+8
+00:01:54,789 --> 00:02:08,850
+The prompt ends with an authority boundary: monitor and recommend only. Do not change prices, place purchase orders, or contact customers. Remember what that is: policy, not a sandbox. The real control is read-only credentials and a human making every decision.
+
+9
+00:02:10,650 --> 00:02:23,367
+At eight a m, the summary is in your WhatsApp thread. Then verify it: open the saved log on the instance, check the execution records, and trace one alert end to end. The chat is the notification; the file is the record.
+
+10
+00:02:25,167 --> 00:02:36,515
+Every choice costs something. The instance is a subscription. Chat apps are not job queues. The agent summarizes its own night, so bad data can look confident. And you now run an internet-facing box. The docs record each trade-off instead of hiding it.
+
+11
+00:02:38,315 --> 00:02:46,485
+The pattern ports to any always-on box: a chat app as the control plane, a cloud instance as the compute plane, files as the evidence plane. The code, the prompt cookbook, and this video's pipeline are public and MIT licensed. Link in the description.

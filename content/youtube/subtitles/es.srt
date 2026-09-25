@@ -1,0 +1,43 @@
+1
+00:00:00,400 --> 00:00:10,236
+Todo agente de IA tiene una dependencia oculta: la máquina donde se ejecuta. Este agente corre en una instancia de nube, se controla por WhatsApp y trabaja en el turno de noche mientras duermes.
+
+2
+00:00:12,036 --> 00:00:23,474
+Cerrar la tapa del portátil puede dormirlo, cortar la red y detener el trabajo en curso. Hay desarrolladores recorriendo aeropuertos con el portátil entreabierto para mantener vivo a su agente. Es un apaño, no un diseño.
+
+3
+00:00:25,274 --> 00:00:37,805
+Para un equipo que trabaja en hora de Pekín (UTC+8), las horas de compra más intensas de Europa y América caen de noche. Justo entonces cambian los precios de la competencia y se agota el stock — justo entonces falla el portátil dormido.
+
+4
+00:00:39,605 --> 00:00:55,223
+El sistema tiene tres capas. WhatsApp es la capa de control: en un solo chat envías trabajo y lees alertas. La instancia de nube es la capa de cómputo: funciona independiente de tu portátil. Los archivos en disco son la capa de evidencia: cada ejecución deja un registro que puedes revisar.
+
+5
+00:00:57,023 --> 00:01:11,865
+El portátil duerme. Un servidor casero necesita electricidad, red y DNS dinámico. Una instancia de nube funciona veinticuatro horas, tiene dirección pública para apps de chat y se restaura desde una instantánea. El artículo compara las tres opciones con cuatro factores.
+
+6
+00:01:13,665 --> 00:01:30,290
+Crea una instancia Linux desde la plantilla de aplicación OpenClaw: dos vCPU, dos gigabytes de memoria, cuarenta gigabytes de disco. Elige una región fuera de China continental para WhatsApp, conecta tu clave API del modelo y escanea el código QR para vincular WhatsApp. Envía hi y espera la respuesta.
+
+7
+00:01:32,090 --> 00:01:49,613
+El trabajo se define con un solo mensaje. El alcance es fijo: productos configurados y el almacén de la costa este. Los eventos son fijos: baja el precio, o el stock cae por debajo de cincuenta unidades. Las alertas se deduplican y el resumen llega a las ocho de la mañana, hora de Pekín, aunque no haya ningún problema.
+
+8
+00:01:51,413 --> 00:02:06,533
+El prompt termina con un límite de autoridad: solo observar y recomendar. No cambies precios, no hagas pedidos, no contactes a clientes. Recuerda: esto es política, no un sandbox. El control real son credenciales de solo lectura y una persona en cada decisión.
+
+9
+00:02:08,333 --> 00:02:20,973
+A las ocho de la mañana el resumen está en tu hilo de WhatsApp. Luego verifica: abre el registro guardado en la instancia, revisa el historial de ejecución y traza una alerta de principio a fin. El chat es el aviso; el archivo es la prueba.
+
+10
+00:02:22,773 --> 00:02:39,410
+Cada elección tiene un precio. La instancia es una suscripción. Las apps de chat no son una cola de trabajo. El agente resume su propia noche, así que los datos malos también pueden parecer fiables. Y ahora operas una caja abierta en internet. La documentación registra cada compensación, no la esconde.
+
+11
+00:02:41,210 --> 00:02:56,957
+Este patrón sirve para cualquier caja siempre encendida: una app de chat como capa de control, una instancia de nube como capa de cómputo, archivos como capa de evidencia. El código, el recetario de prompts y el pipeline de este vídeo son públicos y con licencia MIT. Enlace en la descripción.

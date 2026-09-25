@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:10.638
+Ogni agente AI ha una dipendenza nascosta: la macchina su cui gira. Questo agente gira su un'istanza cloud, si controlla via WhatsApp e lavora nel turno di notte mentre dormi.
+
+00:00:12.438 --> 00:00:25.653
+Chiudere il coperchio del portatile può farlo dormire, spezzare la rete e fermare il lavoro in corso. Gli sviluppatori girano per gli aeroporti con il portatile socchiuso per tenere vivo il proprio agente. È un rattoppo, non un progetto.
+
+00:00:27.453 --> 00:00:40.909
+Per un team sull'ora di Pechino (UTC+8), le ore di acquisto più intense di Europa e America cadono di notte. Proprio allora cambiano i prezzi dei concorrenti e finiscono le scorte — proprio allora il portatile addormentato fallisce.
+
+00:00:42.709 --> 00:00:59.259
+Il sistema ha tre livelli. WhatsApp è il livello di controllo: in una sola chat invii il lavoro e leggi gli avvisi. L'istanza cloud è il livello di calcolo: gira indipendente dal tuo portatile. I file sul disco sono il livello di prova: ogni esecuzione lascia un registro che puoi controllare.
+
+00:01:01.059 --> 00:01:17.098
+Il portatile dorme. Un server di casa richiede elettricità, rete e DNS dinamico. Un'istanza cloud gira ventiquattro ore su ventiquattro, ha un indirizzo pubblico per le app di chat e si ripristina da uno snapshot. L'articolo confronta tutte e tre su quattro fattori.
+
+00:01:18.898 --> 00:01:37.644
+Crea un'istanza Linux dal template applicativo OpenClaw: due vCPU, due gigabyte di memoria, quaranta gigabyte di disco. Scegli una regione fuori dalla Cina continentale per WhatsApp, collega la chiave API del modello, poi scansiona il codice QR per collegare WhatsApp. Invia hi e attendi la risposta.
+
+00:01:39.444 --> 00:01:57.897
+Il lavoro è definito da un solo messaggio. L'ambito è fisso: prodotti configurati e magazzino della costa est. Gli eventi sono fissi: prezzo in calo, oppure scorte sotto le cinquanta unità. Gli avvisi sono deduplicati, e il riepilogo arriva alle otto del mattino, ora di Pechino, anche senza alcun problema.
+
+00:01:59.697 --> 00:02:16.108
+Il prompt finisce con un limite di autorità: solo osservare e consigliare. Non cambiare i prezzi, non emettere ordini, non contattare i clienti. Ricorda: è una policy, non una sandbox. Il controllo vero sono credenziali di sola lettura e un umano in ogni decisione.
+
+00:02:17.908 --> 00:02:31.268
+Alle otto del mattino il riepilogo è nel tuo thread WhatsApp. Poi verifica: apri il registro salvato sull'istanza, controlla la cronologia di esecuzione e traccia un avviso dall'inizio alla fine. La chat è l'avviso; il file è la prova.
+
+00:02:33.068 --> 00:02:51.418
+Ogni scelta ha un prezzo. L'istanza è un abbonamento. Le app di chat non sono una coda di lavoro. L'agente riassume da solo la propria notte, quindi anche dati scadenti possono sembrare affidabili. E ora gestisci una scatola aperta su internet. La documentazione registra ogni compromesso, non lo nasconde.
+
+00:02:53.218 --> 00:03:10.700
+Questo modello vale per qualsiasi scatola sempre accesa: un'app di chat come livello di controllo, un'istanza cloud come livello di calcolo, file come livello di prova. Il codice, il ricettario dei prompt e la pipeline di questo video sono pubblici e con licenza MIT. Link in descrizione.

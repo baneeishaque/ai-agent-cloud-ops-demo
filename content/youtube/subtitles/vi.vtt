@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:12.956
+Mọi tác nhân AI đều có một phụ thuộc ẩn: cỗ máy mà nó chạy trên đó. Tác nhân này chạy trên một phiên bản đám mây, được điều khiển qua WhatsApp và làm ca đêm trong lúc bạn ngủ.
+
+00:00:14.756 --> 00:00:28.844
+Gập nắp laptop có thể khiến nó ngủ, đứt mạng và dừng công việc đang chạy. Các lập trình viên đi khắp sân bay với chiếc laptop hé mở để giữ tác nhân sống. Đó là cách chữa cháy, không phải thiết kế.
+
+00:00:30.644 --> 00:00:46.324
+Với một đội làm theo giờ Bắc Kinh (UTC+8), những giờ mua sắm đông đúc nhất ở châu Âu và châu Mỹ rơi vào ban đêm. Đúng lúc đó giá đối thủ thay đổi và hàng tồn hết — đúng lúc đó chiếc laptop đang ngủ thất bại.
+
+00:00:48.124 --> 00:01:07.261
+Hệ thống có ba lớp. WhatsApp là lớp điều khiển: trong một cuộc trò chuyện, bạn gửi việc và đọc cảnh báo. Phiên bản đám mây là lớp tính toán: nó chạy độc lập với laptop của bạn. Các tệp trên đĩa là lớp bằng chứng: mỗi lần chạy để lại một nhật ký bạn có thể kiểm tra.
+
+00:01:09.061 --> 00:01:25.478
+Laptop ngủ. Máy chủ tại nhà cần điện, mạng và DNS động. Phiên bản đám mây chạy hai mươi tư giờ, có địa chỉ công khai cho ứng dụng trò chuyện và khôi phục được từ ảnh chụp nhanh. Bài viết so sánh cả ba trên bốn yếu tố.
+
+00:01:27.278 --> 00:01:46.662
+Tạo một phiên bản Linux từ mẫu ứng dụng OpenClaw: hai vCPU, hai gigabyte bộ nhớ, bốn mươi gigabyte đĩa. Chọn khu vực ngoài Trung Quốc đại lục cho WhatsApp, kết nối khóa API mô hình, rồi quét mã QR để liên kết WhatsApp. Gửi hi và chờ phản hồi.
+
+00:01:48.462 --> 00:02:08.450
+Công việc được định nghĩa bằng một tin nhắn duy nhất. Phạm vi cố định: sản phẩm đã cấu hình và kho bờ đông. Sự kiện cố định: giá giảm, hoặc tồn kho dưới năm mươi đơn vị. Cảnh báo được khử trùng lặp, và bản tóm tắt đến lúc tám giờ sáng theo giờ Bắc Kinh, kể cả khi không có vấn đề gì.
+
+00:02:10.250 --> 00:02:27.764
+Câu lệnh kết thúc bằng một giới hạn quyền: chỉ giám sát và đề xuất. Đừng đổi giá, đừng đặt mua, đừng liên hệ khách hàng. Hãy nhớ: đây là chính sách, không phải hộp cát. Kiểm soát thật là thông tin xác thực chỉ đọc và một con người trong mỗi quyết định.
+
+00:02:29.564 --> 00:02:45.888
+Lúc tám giờ sáng, bản tóm tắt nằm trong luồng WhatsApp của bạn. Sau đó kiểm tra: mở nhật ký đã lưu trên phiên bản, xem lịch sử thực thi và truy vết một cảnh báo từ đầu đến cuối. Trò chuyện là thông báo; tệp là bằng chứng.
+
+00:02:47.688 --> 00:03:07.466
+Mọi lựa chọn đều có giá. Phiên bản là một gói đăng ký. Ứng dụng trò chuyện không phải hàng đợi công việc. Tác nhân tự tóm tắt đêm của chính nó, nên dữ liệu tồi cũng có vẻ đáng tin. Và giờ bạn vận hành một chiếc hộp mở trên internet. Tài liệu ghi lại mọi đánh đổi, không giấu đi.
+
+00:03:09.266 --> 00:03:28.289
+Mô hình này áp dụng cho mọi chiếc hộp luôn bật: ứng dụng trò chuyện làm lớp điều khiển, phiên bản đám mây làm lớp tính toán, tệp làm lớp bằng chứng. Mã nguồn, sổ công thức câu lệnh và quy trình của video này là công khai và theo giấy phép MIT. Liên kết ở phần mô tả.

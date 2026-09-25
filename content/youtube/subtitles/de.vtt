@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:13.575
+Jeder KI-Agent hat eine verborgene Abhängigkeit: die Maschine, auf der er läuft. Dieser Agent läuft auf einer Cloud-Instanz, wird über WhatsApp gesteuert und arbeitet in der Nachtschicht, während du schläfst.
+
+00:00:15.375 --> 00:00:30.713
+Ein zugeklappter Laptop kann schlafen gehen, das Netzwerk kann abbrechen, und laufende Arbeit kann stoppen. Entwickler laufen mit halb offenem Laptop durch Flughäfen, um ihren Agenten am Leben zu halten. Das ist ein Workaround, kein Design.
+
+00:00:32.513 --> 00:00:48.105
+Für ein Team nach Pekinger Zeit (UTC+8) fallen die geschäftigsten Einkaufsstunden Europas und Amerikas in die Nacht. Genau dann ändern Wettbewerber ihre Preise und Lagerbestände gehen zur Neige — genau dann versagt der schlafende Laptop.
+
+00:00:49.905 --> 00:01:08.486
+Das System hat drei Schichten. WhatsApp ist die Steuerungsschicht: In einem Chat sendest du Arbeit und liest Warnungen. Die Cloud-Instanz ist die Rechenschicht: Sie läuft unabhängig von deinem Laptop. Dateien auf der Festplatte sind die Belegschicht: Jeder Lauf hinterlässt ein Protokoll, das du prüfen kannst.
+
+00:01:10.286 --> 00:01:28.275
+Der Laptop schläft. Ein Heimserver braucht Strom, Netzwerk und dynamisches DNS. Eine Cloud-Instanz läuft vierundzwanzig Stunden, hat eine öffentliche Adresse für Chat-Apps und lässt sich aus einem Snapshot wiederherstellen. Der Artikel vergleicht alle drei anhand von vier Faktoren.
+
+00:01:30.075 --> 00:01:52.620
+Erstelle eine Linux-Instanz aus der OpenClaw-Anwendungsvorlage: zwei vCPU, zwei Gigabyte Arbeitsspeicher, vierzig Gigabyte Speicherplatz. Wähle eine Region außerhalb des chinesischen Festlands für WhatsApp, verbinde deinen Modell-API-Schlüssel und scanne dann den QR-Code, um WhatsApp zu verknüpfen. Sende hi und warte auf die Antwort.
+
+00:01:54.420 --> 00:02:16.117
+Die Arbeit wird durch eine einzige Nachricht definiert. Der Umfang steht fest: konfigurierte Produkte und das Lager an der Ostküste. Die Ereignisse stehen fest: Preis fällt, oder Bestand unter fünfzig Einheiten. Warnungen werden entdoppelt, und die Zusammenfassung kommt um acht Uhr morgens Pekinger Zeit, auch wenn es keine Probleme gibt.
+
+00:02:17.917 --> 00:02:36.581
+Der Prompt endet mit einer Berechtigungsgrenze: nur beobachten und empfehlen. Ändere keine Preise, gib keine Bestellungen auf, kontaktiere keine Kunden. Denk daran: Das ist Richtlinie, keine Sandbox. Die echte Kontrolle sind Nur-Lese-Zugangsdaten und ein Mensch bei jeder Entscheidung.
+
+00:02:38.381 --> 00:02:55.094
+Um acht Uhr morgens liegt die Zusammenfassung in deinem WhatsApp-Thread. Dann prüfe: Öffne das gespeicherte Protokoll auf der Instanz, sieh dir die Ausführungsprotokolle an und verfolge eine Warnung von Anfang bis Ende. Der Chat ist die Benachrichtigung; die Datei ist der Beleg.
+
+00:02:56.894 --> 00:03:16.777
+Jede Wahl hat einen Preis. Die Instanz ist ein Abonnement. Chat-Apps sind keine Arbeitswarteschlange. Der Agent fasst seine eigene Nacht zusammen, deshalb können schlechte Daten zuverlässig wirken. Und jetzt betreibst du eine offene Box im Internet. Die Unterlagen halten jeden Kompromiss fest, statt ihn zu verbergen.
+
+00:03:18.577 --> 00:03:35.859
+Dieses Muster passt auf jede Always-on-Box: eine Chat-App als Steuerungsschicht, eine Cloud-Instanz als Rechenschicht, Dateien als Belegschicht. Der Code, das Prompt-Kochbuch und die Pipeline dieses Videos sind öffentlich und MIT-lizenziert. Link in der Beschreibung.

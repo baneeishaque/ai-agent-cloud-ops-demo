@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:14.038
+Her yapay zeka ajanının gizli bir bağımlılığı vardır: üzerinde çalıştığı makine. Bu ajan bir bulut örneğinde çalışır, WhatsApp üzerinden kontrol edilir ve siz uyurken gece vardiyasında çalışır.
+
+00:00:15.838 --> 00:00:31.391
+Dizüstünün kapağını kapatmak onu uyutabilir, ağı koparabilir ve süren işi durdurabilir. Geliştiriciler ajanlarını hayatta tutmak için havaalanlarında yarı açık dizüstüyle dolaşıyor. Bu bir geçici çözüm, tasarım değil.
+
+00:00:33.191 --> 00:00:49.462
+Pekin saatine (UTC+8) göre çalışan bir ekip için Avrupa ve Amerika'nın en yoğun alışveriş saatleri geceye düşer. İşte o zaman rakiplerin fiyatları değişir ve stok tükenir — işte o zaman uyuyan dizüstü başarısız olur.
+
+00:00:51.262 --> 00:01:11.466
+Sistemin üç katmanı var. WhatsApp kontrol katmanıdır: tek bir sohbette işi gönderir ve uyarıları okursunuz. Bulut örneği hesaplama katmanıdır: dizüstünüzden bağımsız çalışır. Disk üzerindeki dosyalar kanıt katmanıdır: her çalıştırma denetleyebileceğiniz bir günlük bırakır.
+
+00:01:13.266 --> 00:01:30.515
+Dizüstü uyur. Ev sunucusu elektrik, ağ ve dinamik DNS ister. Bulut örneği yirmi dört saat çalışır, sohbet uygulamaları için genel bir adresi vardır ve anlık görüntüden geri yüklenir. Makale üçünü dört faktörde karşılaştırıyor.
+
+00:01:32.315 --> 00:01:52.580
+OpenClaw uygulama şablonundan bir Linux örneği oluşturun: iki vCPU, iki gigabayt bellek, kırk gigabayt disk. WhatsApp için anakara Çin dışında bir bölge seçin, model API anahtarınızı bağlayın, ardından QR kodu tarayarak WhatsApp'ı bağlayın. hi gönderin ve yanıtı bekleyin.
+
+00:01:54.380 --> 00:02:13.174
+İş tek bir mesajla tanımlanır. Kapsam sabit: yapılandırılmış ürünler ve doğu yakası deposu. Olaylar sabit: fiyat düşer ya da stok elli birimin altına iner. Uyarılar tekilleştirilir ve özet Pekin saatiyle sabah sekizde gelir, hiç sorun olmasa bile.
+
+00:02:14.974 --> 00:02:33.899
+Prompt bir yetki sınırıyla biter: yalnızca izle ve öner. Fiyatları değiştirme, satın alma emri verme, müşterilerle iletişime geçme. Unutmayın: bu bir politika, korumalı alan değil. Gerçek kontrol salt okunur kimlik bilgileri ve her kararda bir insandır.
+
+00:02:35.699 --> 00:02:49.939
+Sabah sekizde özet WhatsApp dizinizde olur. Sonra doğrulayın: örnekteki kayıtlı günlüğü açın, yürütme geçmişine bakın ve bir uyarıyı baştan sona izleyin. Sohbet bildirimdir; dosya kanıttır.
+
+00:02:51.739 --> 00:03:12.069
+Her seçimin bir bedeli vardır. Örnek bir aboneliktir. Sohbet uygulamaları iş kuyruğu değildir. Ajan kendi gecesini kendisi özetler, bu yüzden kötü veri de güvenilir görünebilir. Ve artık internette açık bir kutu işletiyorsunuz. Belgeler her ödünleşimi kaydeder, saklamaz.
+
+00:03:13.869 --> 00:03:32.642
+Bu kalıp her zaman açık her kutuya uyar: kontrol katmanı olarak bir sohbet uygulaması, hesaplama katmanı olarak bir bulut örneği, kanıt katmanı olarak dosyalar. Kod, prompt yemek kitabı ve bu videonun iş akışı açık ve MIT lisanslı. Bağlantı açıklamada.
